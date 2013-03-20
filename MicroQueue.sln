@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroQueue", "MicroQueue\MicroQueue.csproj", "{21CB0870-C341-42B6-8C00-728D4D981733}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroQueue.Tests", "MicroQueue.Tests\MicroQueue.Tests.csproj", "{A4133316-446D-4858-AB53-848F9799D70C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{56E97ED4-B53C-44EB-8042-4F4E835CFF57}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Playground", "Playground\Playground.csproj", "{015A22CD-9116-47D1-B558-C8171BF77D2B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{21CB0870-C341-42B6-8C00-728D4D981733}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21CB0870-C341-42B6-8C00-728D4D981733}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21CB0870-C341-42B6-8C00-728D4D981733}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21CB0870-C341-42B6-8C00-728D4D981733}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4133316-446D-4858-AB53-848F9799D70C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4133316-446D-4858-AB53-848F9799D70C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4133316-446D-4858-AB53-848F9799D70C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4133316-446D-4858-AB53-848F9799D70C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{015A22CD-9116-47D1-B558-C8171BF77D2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{015A22CD-9116-47D1-B558-C8171BF77D2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{015A22CD-9116-47D1-B558-C8171BF77D2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{015A22CD-9116-47D1-B558-C8171BF77D2B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
