@@ -21,6 +21,8 @@ namespace MicroQueue {
 		            DequeueAndProcess(queue);
 		        } catch (OperationCanceledException) {
                     TraceHelper.TraceMessage(GetTraceMessage("Operation canceled"));
+                } catch (ThreadAbortException) {
+                    TraceHelper.TraceMessage(GetTraceMessage("Aborted"));
 		        } catch (Exception e) {
                     TraceHelper.TraceError(e);
 		        }
