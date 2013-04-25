@@ -9,10 +9,10 @@ namespace Playground {
         public static Random Random = new Random();
 
         static void Main(string[] args) {
-            var mainQueue = new MainQueue<int>(1000);
+            var mainQueue = new DefaultQueue<int>(1000);
             mainQueue.Start(() => new MooProcessor());
 
-            Parallel.For(0, 2000, i =>  mainQueue.EnqueueForProcessing(i));
+            Parallel.For(0, 2000, i => mainQueue.EnqueueForProcessing(i));
 
             Console.ReadLine();
             mainQueue.Stop(true);
@@ -22,7 +22,7 @@ namespace Playground {
 
     public class MooProcessor : IEnqueuedObjectProcessor<int> {
         public void Process(int obj) {
-            int wait = Program.Random.Next(int.MaxValue/2, int.MaxValue);
+            int wait = Program.Random.Next(int.MaxValue / 2, int.MaxValue);
             Thread.SpinWait(wait);
         }
     }

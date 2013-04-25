@@ -9,8 +9,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>MicroQueue</RootNamespace>
     <AssemblyName>MicroQueue</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -41,7 +42,7 @@
   <ItemGroup>
     <Compile Include="IEnqueuedObjectProcessor.cs" />
     <Compile Include="IQueue.cs" />
-    <Compile Include="MainQueue.cs" />
+    <Compile Include="DefaultQueue.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TraceHelper.cs" />
     <Compile Include="Worker.cs" />
